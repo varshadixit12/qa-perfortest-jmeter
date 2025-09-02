@@ -29,7 +29,7 @@ jobs:
       - name: Run JMeter Tests
         run: |
           mkdir -p result/report
-          ./jmeter/bin/jmeter -n -t tests/your-test-plan.jmx -l result/result.jtl -e -o result/report
+          ./jmeter/bin/jmeter -n -t soho.jmx -l result/result.jtl -e -o result/repor
 
       - name: Upload Test Results
         uses: actions/upload-artifact@v4
